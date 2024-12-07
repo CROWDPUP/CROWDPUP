@@ -73,7 +73,13 @@ nav ul {
 nav ul li {
     margin: 0 20px;
 }
-
+.crowdfunding-img {
+    width: 150px; /* Adatta la dimensione del logo */
+    height: auto;
+    margin-top: 20px;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
 nav ul li a {
     color: white;
     text-decoration: none;
