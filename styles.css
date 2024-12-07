@@ -84,3 +84,53 @@ nav ul li a:hover {
 
 .roadmap ul {
     margin-top: 10px;
+    padding-left: 20px;
+}
+
+.roadmap ul li {
+    margin-bottom: 5px;
+}
+
+.roadmap p {
+    font-size: 1.2rem;
+    line-height: 1.6;
+}
+
+/* Footer con icone social */
+footer {
+    background-color: #222;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+footer p {
+    font-size: 1.2rem;
+    margin-bottom: 15px;
+}
+
+.social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 20px; /* Distanza tra le icone */
+}
+
+.social-icon {
+    color: white;
+    font-size: 2rem; /* Dimensione dell'icona */
+    text-decoration: none;
+    transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.social-icon:hover {
+    color: #1D9BF0; /* Colore Twitter Blue */
+    transform: scale(1.2); /* Aumento della dimensione al passaggio del mouse */
+}
+
+.social-icon i {
+    transition: color 0.3s ease;
+}
+
+.social-icon:hover i {
+    color: #1D9BF0; /* Colore fluo per l'hover */
+}
