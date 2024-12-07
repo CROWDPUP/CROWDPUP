@@ -1,184 +1,142 @@
-/* Reset di base per eliminare margini e padding */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
 }
 
-/* Corpo del sito con un sfondo dinamico e professionale */
 body {
-    font-family: 'Bangers', cursive, 'Roboto', sans-serif;
-    background: linear-gradient(135deg, #1D9BF0, #32CD32); /* Gradiente di blu e verde */
-    color: #fff;
-    margin: 0;
-    padding: 0;
-    background-attachment: fixed;
-    background-size: cover;
-    line-height: 1.8;
+    background: #f9f9f9;
+    min-height: 100vh;
+    overflow-x: hidden;
 }
 
-/* Header con logo e Twitter Blue */
+/* Header Styles */
 header {
-    padding: 50px;
-    text-align: center;
-    background-color: rgba(0, 0, 0, 0.6);
-    margin-bottom: 30px;
-}
-
-header img {
-    width: 150px;
-    margin-bottom: 20px;
-}
-
-header h1 {
-    font-size: 4rem;
-    color: #fff;
-    text-transform: uppercase;
-    letter-spacing: 3px;
-}
-
-header p {
-    font-size: 1.6rem;
-}
-
-/* Sezione About con immagini divertenti */
-#about {
-    text-align: center;
-    padding: 50px;
-    background-color: rgba(255, 255, 255, 0.1); /* Background trasparente per la sezione */
-    border-radius: 10px;
-}
-
-.crowdfunding-img {
+    position: absolute;
+    top: 0;
+    left: 0;
     width: 100%;
-    max-width: 600px;
-    height: auto;
-    border-radius: 15px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    padding: 30px 100px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    z-index: 100;
 }
 
-/* Navigazione con un tema brillante */
-nav {
-    background-color: #32CD32; /* Verde brillante per la navigazione */
-    padding: 15px;
-    text-align: center;
+.logo {
+    font-size: 2em;
+    color: #1D9BF0; /* Twitter Blue */
+    pointer-events: none;
+    margin-right: 270px;
 }
 
-nav ul {
-    list-style: none;
+.navigation a {
+    text-decoration: none;
+    color: #359381; /* CrowdPup Green */
+    padding: 6px 15px;
+    border-radius: 20px;
+    margin: 0px 10px;
+    font-weight: 600;
+    transition: background 0.3s, color 0.3s;
+}
+
+.navigation a:hover,
+.navigation a.active {
+    background: #359381;
+    color: #fff;
+}
+
+/* Parallax Section */
+.parallax {
+    position: relative;
     display: flex;
     justify-content: center;
+    align-items: center;
+    height: 100vh;
+    overflow: hidden;
+    background: linear-gradient(135deg, #1D9BF0, #32CD32);
 }
 
-nav ul li {
-    margin: 0 20px;
-}
-.crowdfunding-img {
-    width: 150px; /* Adatta la dimensione del logo */
-    height: auto;
-    margin-top: 20px;
-    border-radius: 15px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
-}
-nav ul li a {
-    color: white;
-    text-decoration: none;
-    font-size: 1.3rem;
-    font-weight: bold;
-    text-transform: uppercase;
-    padding: 10px;
-    transition: all 0.3s ease;
+#text {
+    position: absolute;
+    font-size: 5em;
+    color: #fff;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+    animation: fadeIn 1.5s ease-in-out;
 }
 
-nav ul li a:hover {
-    background-color: #1D9BF0;
-    border-radius: 5px;
-}
-
-/* Roadmap con sfondo colorato e animazione di entrata */
-#roadmap {
-    padding: 50px;
-    background-color: #2E3B4E; /* Colore scuro per contrasto */
-    color: white;
-    border-radius: 15px;
-    margin-bottom: 30px;
-    transform: translateX(100%); /* Parte da destra */
-    animation: slideInFromRight 1s forwards;
-}
-
-/* Animazione di entrata da destra a sinistra */
-@keyframes slideInFromRight {
-    0% {
-        transform: translateX(100%); /* Parte da destra */
+/* Animation */
+@keyframes fadeIn {
+    from {
         opacity: 0;
     }
-    100% {
-        transform: translateX(0); /* Arriva alla posizione normale */
+    to {
         opacity: 1;
     }
 }
 
-/* Dettagli lista roadmap */
-.roadmap ol {
-    padding-left: 20px;
+/* Images in the Parallax */
+.parallax img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    pointer-events: none;
 }
 
-.roadmap li {
-    margin-bottom: 40px;
-    font-size: 1.3rem;
-}
-
-.roadmap p {
-    font-size: 1.1rem;
-    line-height: 1.8;
-}
-
-.roadmap ul {
-    padding-left: 20px;
-}
-
-.roadmap ul li {
-    margin-bottom: 5px;
-}
-
-/* Hover per le voci della roadmap */
-.roadmap li:hover {
-    background-color: #1D9BF0;
-    border-radius: 5px;
-    transition: background-color 0.3s ease;
-}
-
-/* Animazione Hover per i pulsanti */
-.btn {
-    background-color: #1D9BF0;
-    color: white;
-    padding: 15px 30px;
-    border: none;
+/* Section Styles */
+.sec {
+    position: relative;
+    background: #003329; /* Dark green for contrast */
+    padding: 100px;
+    text-align: center;
     border-radius: 10px;
-    cursor: pointer;
-    transition: background-color 0.3s ease, transform 0.3s ease;
 }
 
-.btn:hover {
-    background-color: #32CD32;
-    transform: scale(1.05);
+.sec h2 {
+    font-size: 3em;
+    color: #fff;
+    margin-bottom: 10px;
 }
 
-/* Social Icone con effetti hover */
-.social-icons {
-    display: flex;
-    justify-content: center;
-    gap: 30px;
-    margin-top: 30px;
+.sec p {
+    font-size: 1.2em;
+    color: #fff;
+    font-weight: 300;
+    line-height: 1.6;
 }
 
-.social-icon {
-    color: white;
-    font-size: 2.5rem;
-    transition: transform 0.3s ease, color 0.3s ease;
-}
+/* Responsive Menu for Mobile */
+@media only screen and (max-width: 800px) {
+    .navigation {
+        display: none;
+        position: absolute;
+        top: 60px;
+        right: 10px;
+        background: #003329;
+        border-radius: 5px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
 
-.social-icon:hover {
-    color: #1D9BF0; /* Colore al passaggio del mouse */
-    transform: scale(1.2);
+    .navigation.active {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .navigation a {
+        display: block;
+        padding: 10px 20px;
+        color: #fff;
+        text-align: center;
+        margin-bottom: 5px;
+        font-weight: 600;
+    }
+
+    .parallax {
+        height: 50vh;
+    }
 }
