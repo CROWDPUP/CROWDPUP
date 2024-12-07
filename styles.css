@@ -1,4 +1,37 @@
-/* Sezione features con immagini di crowdfunding divertenti */
+/* Reset di base per eliminare margini e padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Corpo del sito */
+body {
+    font-family: 'Bangers', cursive; /* Font più energico e divertente */
+    background-color: #f4f4f9;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Header con logo e Twitter Blue */
+header {
+    background-color: #1D9BF0; /* Twitter Blue */
+    color: white;
+    padding: 30px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+header h1 {
+    font-size: 4rem; /* Titolo più grande */
+    margin-bottom: 10px;
+}
+
+header p {
+    font-size: 1.5rem;
+}
+
+/* Sezione con immagini di crowdfunding */
 .crowdfunding-img {
     width: 100%;
     height: auto;
@@ -7,41 +40,47 @@
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-/* Stile per il footer e le icone social */
-footer {
-    background-color: #222;
-    color: white;
-    padding: 20px;
-    text-align: center;
+/* Navigazione */
+nav {
+    background-color: #32CD32; /* Verde lime */
+    padding: 10px 0;
 }
 
-footer p {
-    font-size: 1.2rem;
-    margin-bottom: 15px;
-}
-
-.social-icons {
+nav ul {
+    list-style: none;
     display: flex;
     justify-content: center;
-    gap: 20px; /* Distanza tra le icone */
 }
 
-.social-icon {
+nav ul li {
+    margin: 0 20px;
+}
+
+nav ul li a {
     color: white;
-    font-size: 2rem; /* Dimensione dell'icona */
     text-decoration: none;
-    transition: transform 0.3s ease, color 0.3s ease;
+    font-weight: bold;
+    text-transform: uppercase;
+    padding: 10px;
 }
 
-.social-icon:hover {
-    color: #00FF00; /* Verde fluo per hover */
-    transform: scale(1.2); /* Aumento della dimensione al passaggio del mouse */
+nav ul li a:hover {
+    background-color: #00FF00;
+    border-radius: 5px;
 }
 
-.social-icon i {
-    transition: color 0.3s ease;
+/* Roadmap */
+.roadmap {
+    margin-top: 30px;
 }
 
-.social-icon:hover i {
-    color: #00FF00; /* Colore fluo per l'hover */
+.roadmap ol {
+    padding-left: 20px;
 }
+
+.roadmap li {
+    margin-bottom: 40px;
+}
+
+.roadmap ul {
+    margin-top: 10px;
