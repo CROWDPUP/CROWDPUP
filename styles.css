@@ -1,0 +1,148 @@
+/* Reset di base per eliminare margini e padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Corpo del sito */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f9f9f9;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Header */
+header {
+    background-color: #2d8f46; /* Verde brillante */
+    color: white;
+    padding: 30px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+header h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+
+header p {
+    font-size: 1.2rem;
+}
+
+/* Navigazione */
+nav {
+    background-color: #45a049; /* Verde scuro per il menu */
+    padding: 10px 0;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 20px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    text-transform: uppercase;
+    padding: 10px;
+}
+
+nav ul li a:hover {
+    background-color: #2d8f46;
+    border-radius: 5px;
+}
+
+/* Sezioni */
+section {
+    padding: 60px 20px;
+    text-align: center;
+}
+
+section h2 {
+    color: #2d8f46;
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+section p, ul, ol {
+    font-size: 1.2rem;
+    line-height: 1.8;
+}
+
+ul {
+    list-style-type: none;
+    margin: 20px 0;
+}
+
+ul li {
+    margin-bottom: 10px;
+}
+
+ol {
+    list-style-type: decimal;
+    margin: 20px 0;
+}
+
+/* Bottone */
+.btn {
+    padding: 12px 25px;
+    background-color: #2d8f46; /* Colore verde */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #45a049;
+}
+
+/* Footer */
+footer {
+    background-color: #222;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+footer p {
+    font-size: 1rem;
+}
+
+/* Form */
+form input[type="email"] {
+    padding: 10px;
+    width: 250px;
+    margin-right: 10px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+}
+
+form input[type="email"]:focus {
+    outline: none;
+    border-color: #45a049;
+}
+
+/* Animazioni per effetto fade in */
+.animate__fadeIn {
+    animation: fadeIn 1.5s ease-in-out;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
