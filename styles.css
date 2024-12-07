@@ -1,49 +1,60 @@
-/* Reset di base per eliminare margini e padding */
-* {
+/* Corpo del sito con un sfondo dinamico e professionale */
+body {
+    font-family: 'Bangers', cursive, 'Roboto', sans-serif;
+    background: linear-gradient(135deg, #1D9BF0, #32CD32); /* Gradiente di blu e verde */
+    color: #fff;
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
+    background-attachment: fixed;
+    background-size: cover;
+    line-height: 1.8;
 }
 
-/* Corpo del sito */
-body {
-    font-family: 'Bangers', cursive; /* Font più energico e divertente */
-    background-color: #f4f4f9;
-    color: #333;
-    line-height: 1.6;
-}
-
-/* Header con logo e Twitter Blue */
+/* Header - Più grande, con il logo e il titolo ben visibili */
 header {
-    background-color: #1D9BF0; /* Twitter Blue */
-    color: white;
-    padding: 30px;
+    padding: 50px;
     text-align: center;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: rgba(0, 0, 0, 0.6);
+    margin-bottom: 30px;
+}
+
+header img {
+    width: 150px; /* Logo più visibile */
+    margin-bottom: 20px;
 }
 
 header h1 {
-    font-size: 4rem; /* Titolo più grande */
-    margin-bottom: 10px;
+    font-size: 4rem;
+    color: #fff;
+    text-transform: uppercase;
+    letter-spacing: 3px;
 }
 
 header p {
-    font-size: 1.5rem;
+    font-size: 1.6rem;
 }
 
-/* Sezione con immagini di crowdfunding */
+/* Sezione About con immagini divertenti */
+#about {
+    text-align: center;
+    padding: 50px;
+    background-color: rgba(255, 255, 255, 0.1); /* Background trasparente per la sezione */
+    border-radius: 10px;
+}
+
 .crowdfunding-img {
     width: 100%;
+    max-width: 600px;
     height: auto;
-    margin-top: 20px;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
 }
 
-/* Navigazione */
+/* Navigazione con un tema brillante */
 nav {
-    background-color: #32CD32; /* Verde lime */
-    padding: 10px 0;
+    background-color: #32CD32; /* Verde brillante per la navigazione */
+    padding: 15px;
+    text-align: center;
 }
 
 nav ul {
@@ -59,19 +70,25 @@ nav ul li {
 nav ul li a {
     color: white;
     text-decoration: none;
+    font-size: 1.3rem;
     font-weight: bold;
     text-transform: uppercase;
     padding: 10px;
+    transition: all 0.3s ease;
 }
 
 nav ul li a:hover {
-    background-color: #00FF00;
+    background-color: #1D9BF0;
     border-radius: 5px;
 }
 
-/* Roadmap */
+/* Roadmap con testo dettagliato */
 .roadmap {
-    margin-top: 30px;
+    padding: 50px;
+    background-color: #fff;
+    color: #333;
+    border-radius: 15px;
+    margin-bottom: 30px;
 }
 
 .roadmap ol {
@@ -80,57 +97,45 @@ nav ul li a:hover {
 
 .roadmap li {
     margin-bottom: 40px;
-}
-
-.roadmap ul {
-    margin-top: 10px;
-    padding-left: 20px;
-}
-
-.roadmap ul li {
-    margin-bottom: 5px;
+    font-size: 1.3rem;
 }
 
 .roadmap p {
-    font-size: 1.2rem;
-    line-height: 1.6;
+    font-size: 1.1rem;
+    line-height: 1.8;
 }
 
-/* Footer con icone social */
-footer {
-    background-color: #222;
+/* Animazione Hover per i pulsanti */
+.btn {
+    background-color: #1D9BF0;
     color: white;
-    padding: 20px;
-    text-align: center;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
 }
 
-footer p {
-    font-size: 1.2rem;
-    margin-bottom: 15px;
+.btn:hover {
+    background-color: #32CD32;
+    transform: scale(1.05);
 }
 
+/* Social Icone con effetti hover */
 .social-icons {
     display: flex;
     justify-content: center;
-    gap: 20px; /* Distanza tra le icone */
+    gap: 30px;
+    margin-top: 30px;
 }
 
 .social-icon {
     color: white;
-    font-size: 2rem; /* Dimensione dell'icona */
-    text-decoration: none;
+    font-size: 2.5rem;
     transition: transform 0.3s ease, color 0.3s ease;
 }
 
 .social-icon:hover {
-    color: #1D9BF0; /* Colore Twitter Blue */
-    transform: scale(1.2); /* Aumento della dimensione al passaggio del mouse */
-}
-
-.social-icon i {
-    transition: color 0.3s ease;
-}
-
-.social-icon:hover i {
-    color: #1D9BF0; /* Colore fluo per l'hover */
+    color: #1D9BF0; /* Colore al passaggio del mouse */
+    transform: scale(1.2);
 }
