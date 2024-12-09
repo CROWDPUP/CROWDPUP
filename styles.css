@@ -1,124 +1,171 @@
-/* Generale */
+/* -- Base Reset -- */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Arial', sans-serif;
 }
 
 body {
-    background: #f5f5f5; /* Colore chiaro di sfondo */
-    color: #333; /* Colore del testo */
-    line-height: 1.6;
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(135deg, #FFFB7D, #FF8C00);
+    color: #333;
+    overflow-x: hidden;
 }
 
-.container {
-    width: 90%;
-    max-width: 1200px;
-    margin: 0 auto;
-}
-
-/* Header */
+/* -- Header Styles -- */
 header {
-    background: #fff;
-    border-bottom: 1px solid #ddd;
-    padding: 20px 0;
-}
-
-header .logo h1 {
-    color: #359381; /* Colore verde CrowdPup */
-    font-size: 1.8rem;
-}
-
-header nav ul {
-    list-style: none;
     display: flex;
-    justify-content: flex-end;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 50px;
+    background-color: #FFE759;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-header nav ul li {
-    margin-left: 20px;
-}
-
-header nav ul li a {
-    text-decoration: none;
-    color: #359381;
+header h1 {
+    font-size: 2.5rem;
+    color: #FF3F81;
     font-weight: bold;
+    text-shadow: 2px 2px #FFD700;
 }
 
-header nav ul li a:hover {
-    color: #1D9BF0; /* Blu brillante */
+header nav a {
+    margin: 0 15px;
+    text-decoration: none;
+    color: #333;
+    font-size: 1.2rem;
+    transition: color 0.3s ease-in-out;
 }
 
-/* Hero Section */
+header nav a:hover {
+    color: #FF3F81;
+}
+
+/* -- Hero Section -- */
 .hero {
-    background: linear-gradient(135deg, #1D9BF0, #32CD32); /* Blu e Verde */
-    color: #fff;
-    text-align: center;
-    padding: 60px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 50px 100px;
+}
+
+.hero img {
+    max-width: 500px;
+    border-radius: 20px;
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.hero .content {
+    max-width: 600px;
 }
 
 .hero h2 {
-    font-size: 2.5rem;
-    margin-bottom: 10px;
+    font-size: 3.5rem;
+    color: #333;
+    margin-bottom: 20px;
+    line-height: 1.2;
 }
 
 .hero p {
-    font-size: 1.2rem;
+    font-size: 1.5rem;
+    color: #555;
     margin-bottom: 20px;
 }
 
-.hero .btn {
+.hero .cta {
     display: inline-block;
-    background: #fff;
-    color: #1D9BF0;
-    padding: 10px 20px;
-    border-radius: 5px;
-    text-decoration: none;
-    font-weight: bold;
-}
-
-.hero .btn:hover {
-    background: #359381;
-    color: #fff;
-}
-
-/* Sezioni */
-.section {
-    padding: 40px 20px;
-    background: #fff;
-    margin: 20px 0;
+    padding: 15px 30px;
+    background: #FF3F81;
+    color: #FFF;
     border-radius: 10px;
+    text-decoration: none;
+    font-size: 1.3rem;
+    font-weight: bold;
+    transition: background 0.3s ease;
 }
 
-.section h2 {
-    color: #1D9BF0;
+.hero .cta:hover {
+    background: #D93670;
+}
+
+/* -- Features Section -- */
+.features {
+    padding: 50px;
+    background: #FFF5E8;
+}
+
+.features h3 {
+    font-size: 2.5rem;
+    text-align: center;
+    margin-bottom: 30px;
+    color: #333;
+}
+
+.features .feature {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 40px;
+}
+
+.features .feature img {
+    width: 150px;
+}
+
+.features .feature p {
+    max-width: 600px;
+    font-size: 1.2rem;
+    line-height: 1.6;
+    color: #555;
+}
+
+/* -- Call to Action Section -- */
+.buy-now {
+    background-color: #FF3F81;
+    color: #FFF;
+    padding: 40px 50px;
+    text-align: center;
+    border-radius: 10px;
+    margin: 50px 0;
+}
+
+.buy-now h3 {
+    font-size: 2.5rem;
     margin-bottom: 20px;
-    text-align: center;
 }
 
-.section ul {
-    list-style: none;
-    padding: 0;
+.buy-now p {
+    font-size: 1.3rem;
+    margin-bottom: 30px;
 }
 
-.section ul li {
-    margin-bottom: 10px;
+.buy-now .cta {
+    background-color: #FFD700;
+    color: #333;
+    padding: 15px 30px;
+    border-radius: 10px;
+    font-size: 1.3rem;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
 }
 
-/* Footer */
+.buy-now .cta:hover {
+    background-color: #FF8C00;
+}
+
+/* -- Footer Styles -- */
 footer {
+    padding: 20px 50px;
     background: #333;
-    color: #fff;
+    color: #FFF;
     text-align: center;
-    padding: 20px 0;
 }
 
 footer a {
-    color: #1D9BF0;
+    color: #FFFB7D;
     text-decoration: none;
 }
 
 footer a:hover {
-    color: #fff;
+    color: #FF3F81;
 }
