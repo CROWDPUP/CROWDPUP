@@ -10,6 +10,11 @@ body {
     font-family: 'Arial', sans-serif;
     background-color: #111;
     color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
 }
 
 /* Header */
@@ -18,6 +23,7 @@ header {
     color: #fff;
     padding: 20px 0;
     text-align: center;
+    width: 100%;
 }
 
 header h1 {
@@ -26,14 +32,31 @@ header h1 {
     margin-bottom: 10px;
 }
 
-/* Sezione Roadmap */
-#roadmap {
-    padding: 50px 10%;
-    text-align: center;
+/* Centra tutte le sezioni */
+.section {
+    width: 80%;
+    max-width: 1200px;
+    padding: 50px;
     background: linear-gradient(135deg, rgba(0, 173, 181, 0.7), rgba(255, 100, 181, 0.7));
     border-radius: 10px;
     margin-top: 2rem;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+    text-align: center;
+}
+
+/* Sezione What is CrowdPup? */
+#what {
+    background: linear-gradient(135deg, rgba(0, 173, 181, 0.7), rgba(255, 100, 181, 0.7));
+}
+
+/* Sezione Mission */
+#mission {
+    background: linear-gradient(135deg, rgba(0, 173, 181, 0.7), rgba(255, 100, 181, 0.7));
+}
+
+/* Sezione Roadmap */
+#roadmap {
+    background: linear-gradient(135deg, rgba(0, 173, 181, 0.7), rgba(255, 100, 181, 0.7));
 }
 
 #roadmap h1 {
@@ -92,7 +115,20 @@ header h1 {
     color: #ff66b2;
 }
 
-/* Adattamento per dispositivi mobili */
+/* Aggiunta stile per le immagini */
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto 20px;
+}
+
+/* Sezione Tokenomics */
+#tokenomics {
+    background: linear-gradient(135deg, rgba(0, 173, 181, 0.7), rgba(255, 100, 181, 0.7));
+}
+
+/* Media Queries per dispositivi mobili */
 @media (max-width: 768px) {
     .roadmap-timeline {
         grid-template-columns: 1fr;
@@ -112,5 +148,10 @@ header h1 {
 
     #roadmap p {
         font-size: 1rem;
+    }
+
+    .section {
+        width: 90%;
+        padding: 30px;
     }
 }
