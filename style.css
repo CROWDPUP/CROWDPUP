@@ -1,0 +1,82 @@
+
+/* General Styles */
+body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(135deg, #1a1a1a, #000);
+    color: #fff;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background: rgba(0, 0, 0, 0.8);
+    border-bottom: 2px solid #444;
+}
+
+.logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #00d8ff;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.nav-links a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+.nav-links a:hover {
+    color: #00d8ff;
+}
+
+/* Section Styles */
+.section {
+    padding: 50px;
+    text-align: center;
+    border-bottom: 1px solid #444;
+}
+
+.section h1 {
+    font-size: 2.5rem;
+    color: #ff00ff;
+    margin-bottom: 20px;
+    text-shadow: 0px 0px 10px #ff00ff;
+}
+
+.section p, .section ul {
+    font-size: 1.2rem;
+    line-height: 1.8;
+}
+
+.section ul {
+    list-style: none;
+    padding: 0;
+}
+
+.section ul li {
+    margin: 10px 0;
+    color: #00d8ff;
+}
+
+/* Footer Styles */
+.footer {
+    text-align: center;
+    padding: 20px;
+    background: rgba(0, 0, 0, 0.8);
+    border-top: 2px solid #444;
+}
+
+.footer p {
+    font-size: 1rem;
+    color: #fff;
+}
