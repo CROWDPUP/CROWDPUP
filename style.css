@@ -120,7 +120,32 @@ img {
     max-width: 100%;
     height: auto;
     display: block;
+    margin: 0 auto 20px
+    /* Impostazioni generali per le immagini */
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
     margin: 0 auto 20px;
+    object-fit: contain; /* Mantiene il rapporto d'aspetto */
+}
+
+/* Sezione Roadmap - limite larghezza immagine */
+#roadmap img,
+#what img,
+#mission img,
+#tokenomics img {
+    max-width: 80%; /* Limita la larghezza delle immagini a 80% della sezione */
+    margin-bottom: 20px; /* Spazio sotto le immagini */
+}
+
+/* Media Queries per dispositivi mobili */
+@media (max-width: 768px) {
+    img {
+        max-width: 90%; /* Limita la larghezza delle immagini al 90% su dispositivi mobili */
+    }
+}
+
 }
 
 /* Sezione Tokenomics */
