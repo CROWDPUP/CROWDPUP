@@ -6,148 +6,51 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CrowdPup - Decentralized Crowdfunding</title>
     <link rel="stylesheet" href="style.css">
-    <style>
-        /* Background and General Styling */
-        body {
-            background: linear-gradient(135deg, #7b2cbf, #9d4edd); /* Violet gradient */
-            color: #fff;
-            font-family: 'Arial', sans-serif;
-            margin: 0;
-            padding: 0;
-        }
-
-        /* Header Styling */
-        header {
-            text-align: center;
-            padding: 50px 20px;
-            background: rgba(0, 0, 0, 0.2);
-        }
-
-        header .header-content h1 {
-            font-size: 3rem;
-            margin-bottom: 10px;
-            color: #fff;
-        }
-
-        header .header-content p {
-            font-size: 1.2rem;
-            color: #e0e0e0;
-        }
-
-        /* Section Styling */
-        section {
-            padding: 50px 20px;
-            margin: 20px auto;
-            background: rgba(255, 255, 255, 0.1);
-            border: 2px solid #fff;
-            border-radius: 10px;
-            max-width: 1200px;
-        }
-
-        section h2 {
-            font-size: 2.5rem;
-            text-align: center;
-            margin-bottom: 20px;
-            color: #fff;
-        }
-
-        section p {
-            font-size: 1rem;
-            line-height: 1.8;
-            color: #dcdcdc;
-        }
-
-        .section-content img {
-            max-width: 100%;
-            border-radius: 10px;
-            margin: 20px 0;
-        }
-
-        /* Social Links */
-        #social-links {
-            text-align: center;
-            padding: 20px;
-        }
-
-        .social-icon img {
-            margin: 0 10px;
-            transition: transform 0.3s ease;
-        }
-
-        .social-icon img:hover {
-            transform: scale(1.2);
-        }
-
-        /* Footer */
-        footer {
-            text-align: center;
-            padding: 20px;
-            background: rgba(0, 0, 0, 0.3);
-        }
-
-        footer p {
-            font-size: 0.9rem;
-            color: #ccc;
-        }
-    </style>
 </head>
 
 <body>
     <!-- Header -->
     <header>
-        <div class="header-content">
-            <h1>CROWDPUP</h1>
-            <p>The Decentralized Crowdfunding Platform</p>
-        </div>
+        <h1>CROWDPUP</h1>
+        <p>The Decentralized Crowdfunding Platform</p>
+        <nav>
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#roadmap">Roadmap</a></li>
+                <li><a href="#tokenomics">Tokenomics</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
     </header>
 
     <!-- About Section -->
-    <section id="about">
-        <div class="section-content">
-            <h2>What is CrowdPup?</h2>
-            <img src="what_crowdpup.png" alt="What is CrowdPup">
-            <p>
-                CrowdPup is a meme token that offers a unique mission: to enable anyone to create decentralized
-                crowdfunding campaigns through our platform. We leverage blockchain technology to ensure transparency,
-                security, and efficiency for fundraisers and contributors alike.
-            </p>
-        </div>
-    </section>
-
-    <!-- Mission Section -->
-    <section id="mission">
-        <div class="section-content">
-            <h2>Our Mission</h2>
-            <img src="mission_crowdpup.png" alt="Our Mission">
-            <p>
-                The mission of CrowdPup is to revolutionize the crowdfunding industry by making it fully decentralized
-                and accessible to everyone. By utilizing blockchain technology, we ensure that fundraising campaigns
-                are transparent, secure, and borderless.
-            </p>
-        </div>
+    <section id="about" class="section-content">
+        <h2>What is CrowdPup?</h2>
+        <img src="what_crowdpup.png" alt="What is CrowdPup">
+        <p>
+            CrowdPup is a unique meme token designed to revolutionize crowdfunding by combining the playful appeal of meme
+            culture with the functional power of blockchain technology. With $PUP tokens, anyone can create, support, or
+            invest in crowdfunding campaigns in a decentralized, efficient, and transparent way.
+        </p>
     </section>
 
     <!-- Roadmap Section -->
-    <section id="roadmap">
-        <div class="section-content">
-            <h2>Roadmap</h2>
-            <img src="roadmap_crowdpup.png" alt="Roadmap">
-            <div class="roadmap-item">
-                <h3>Phase 1: Launch and Token Distribution</h3>
-                <p>
-                    We will officially launch the CrowdPup token and begin distribution to early supporters and the
-                    community. Marketing campaigns will commence to build awareness and create a strong following.
-                </p>
-            </div>
-            <div class="roadmap-item">
-                <h3>Phase 2: Platform Development</h3>
-                <p>
-                    Development of the CrowdPup platform will begin, allowing users to create and manage their
-                    crowdfunding campaigns with ease. We'll focus on a user-friendly interface and blockchain
-                    integration.
-                </p>
-            </div>
-        </div>
+    <section id="roadmap" class="section-content">
+        <h2>Roadmap</h2>
+        <img src="roadmap_crowdpup.png" alt="Roadmap">
+        <p>
+            Follow our four-phase journey to bring CrowdPup to life: Token Launch, Platform Development, Decentralized
+            Platform Launch, and Global Expansion.
+        </p>
+    </section>
+
+    <!-- Tokenomics Section -->
+    <section id="tokenomics" class="section-content">
+        <h2>Tokenomics</h2>
+        <p>
+            Our $PUP token has a fixed supply of 10 billion tokens, distributed across development, marketing, partnerships,
+            and community incentives to power decentralized crowdfunding globally.
+        </p>
     </section>
 
     <!-- Social Links Section -->
@@ -166,10 +69,27 @@
 
     <!-- Footer -->
     <footer>
-        <div class="footer-content">
-            <p>&copy; 2024 CrowdPup. All Rights Reserved.</p>
-        </div>
+        <p>&copy; 2024 CrowdPup. All Rights Reserved.</p>
     </footer>
+
+    <script>
+        // Intersection Observer for lazy loading sections
+        const sections = document.querySelectorAll('section');
+        const observer = new IntersectionObserver(
+            entries => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('visible');
+                    }
+                });
+            },
+            { threshold: 0.1 }
+        );
+
+        sections.forEach(section => {
+            observer.observe(section);
+        });
+    </script>
 </body>
 
 </html>
